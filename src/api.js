@@ -18,3 +18,15 @@ export function searchArtists(query) {
       return null;
     });
 }
+
+export function getArtist(id) {
+  return discogs.get(`/artists/${id}`)
+    .then(response => {
+      console.log (response);
+      return response.data;
+    })
+    .catch(err => {
+      console.error(err);
+      return null;
+    });
+}

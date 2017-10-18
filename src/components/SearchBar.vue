@@ -10,13 +10,17 @@
 				</a>
 			</div>
 		</div>
-		<thumbnails-list :artists="artists"></thumbnails-list>
+		<!-- TODO <thumbnails-list :artists="artists"></thumbnails-list>-->
+		<div v-if="artists.length>0">
+			<router-link v-for="artist in artists" :to="'/artists/' + artist.id">
+        <img :src="artist.thumb"></router-link>
+		</div>
 	</div>
 </template>
 
 <script>
 	import ThumbnailsList from '@/components/ThumbnailsList'
-	import { searchArtists } from '@/api'
+	import { searchArtists,  } from '@/api'
 
 	export default {
 		data () {
@@ -26,7 +30,7 @@
 			}
 		},
 		components: {
-			ThumbnailsList
+			ThumbnailsList,
 		},
 		methods: {
 			search () {
