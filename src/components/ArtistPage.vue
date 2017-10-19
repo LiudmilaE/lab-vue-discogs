@@ -19,6 +19,8 @@
 			        <br>
 			        <small>{{artist.realname}}</small>
 			      </p>
+			      <!--TODO Releases/Albums -->
+			      <a :href="artist.releases_url">Releases</a>
 			    </div>
 			  </div>
 			</article>

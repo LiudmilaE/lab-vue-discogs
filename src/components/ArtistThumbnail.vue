@@ -4,7 +4,6 @@
 </template>
 
 <script>
-	//import ThumbnailsList from '@/components/ThumbnailsList'
 	export default {
 		data: {
 			function() {

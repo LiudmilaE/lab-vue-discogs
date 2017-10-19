@@ -11,13 +11,13 @@
 			</div>
 		</div>
 		<div v-if="artists.length>0">
-		<thumbnails-list :artist="artist" v-for="artist in artists"></thumbnails-list>
+		<artist-thumbnail :artist="artist" v-for="artist in artists"></artist-thumbnail>
 		</div>
 	</div>
 </template>
 
 <script>
-	import ThumbnailsList from '@/components/ThumbnailsList'
+	import ArtistThumbnail from '@/components/ArtistThumbnail'
 	import { searchArtists,  } from '@/api'
 
 	export default {
@@ -28,7 +28,7 @@
 			}
 		},
 		components: {
-			ThumbnailsList,
+			ArtistThumbnail,
 		},
 		methods: {
 			search () {

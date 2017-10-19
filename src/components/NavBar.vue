@@ -17,7 +17,8 @@
       </div>
 
       <div id="navMenuDropping" class="navbar-menu">
-        
+        <a class="navbar-item" href="/">Home
+        </a>
       </div>
     </nav>
 </template>
