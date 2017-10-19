@@ -1,8 +1,8 @@
 <template>
-	<div>
+	<div class="container">
 		<div class="field has-addons">
-			<div class="control">
-				<input class="input" type="text" placeholder="Find a repository" v-model="query">
+			<div class="control is-expanded">
+				<input class="input" type="text" placeholder="Find an artist" v-model="query">
 			</div>
 			<div class="control">
 				<a class="button is-info" @click="search">
