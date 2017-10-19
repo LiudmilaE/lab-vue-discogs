@@ -1,5 +1,6 @@
 <template>
-	<div>
+	<div  class="container">
+		<h2 class="title">{{ artist.name }}</h2>
 		<article class="media" v-if="artist">
 		  <figure class="media-left">
 		    <p class="image is-64x64">

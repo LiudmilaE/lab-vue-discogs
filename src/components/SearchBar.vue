@@ -10,10 +10,8 @@
 				</a>
 			</div>
 		</div>
-		<!-- TODO <thumbnails-list :artists="artists"></thumbnails-list>-->
 		<div v-if="artists.length>0">
-			<router-link v-for="artist in artists" :to="'/artists/' + artist.id">
-        <img :src="artist.thumb"></router-link>
+		<thumbnails-list :artist="artist" v-for="artist in artists"></thumbnails-list>
 		</div>
 	</div>
 </template>
